@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link href="https://fonts.googleapis.com/css?family=Literata|Raleway|Montserrat|Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'favicon/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'favicon/apple-icon-60x60.png' %}' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'favicon/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'favicon/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'favicon/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'favicon/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'favicon/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{% static 'favicon/apple-icon-152x152.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{% static 'favicon/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{% static 'favicon/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'favicon/manifest.json' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static 'favicon/ms-icon-144x144.png' %}">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Bidding Store</title>
+
+    <style>
+      p {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem!important;
+      }
+       .responsive {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+      }
+.grid{
+  display:grid;
+  grid-template-columns: 300px 300px 300px ;
+  grid-column-gap:80px;
+  margin-left: 0px;
+}
+
+.card-product{
+  width:450px;
+  height:350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  border-radius: 30px;
+  border: 1px solid #7f7a80;
+  transition: transform .2s;
+}
+
+.card-product:hover{
+  transform: scale(1.15);
+  background-color:#C1DBF1;
+  color:black;
+}
+
+.card-content1{
+  height:200px;
+  text-align:center;
+  border:1px solid #7f7a80;
+}
+
+.card-content:hover{
+  border: 1px solid #7f7a80;
+  background-color: #C1DBF1;
+  color:black;
+}
+
+
+      img {
+        margin-top: 1em;
+        padding: 4%;
+      }
+
+      .custom-font-1 {
+        font-family: 'Literata', serif;
+      } 
+
+       h2, h3, h4, h5, h6 {
+        margin-top: .5em !important;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+        
+      input:focus {
+        border-bottom: 1px solid deeppink !important;
+        box-shadow: 0 1px 0 0 deeppink !important;
+      }
+      
+      .card-text{
+         text-align:center;
+      }
+
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+
+      /* ----------------------------------------------
+ * Generated by Animista on 2019-7-21 13:37:41
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+	-webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+{% comment %} Admin Profit CSS {% endcomment %}
+
+body{
+  background:#eee;
+}
+
+.card{
+  border:none;
+  position:relative;
+  overflow:hidden;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.card:before{
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color:#E1BEE7;
+  transform:scaleY(1);
+  transition:all 0.5s;
+  transform-origin: bottom
+}
+
+.card:after{
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color:#8E24AA;
+  transform:scaleY(0);
+  transition:all 0.5s;
+  transform-origin: bottom
+}
+
+.card:hover::after{
+  transform:scaleY(1);
+}
+
+
+.fonts{
+  font-size:11px;
+}
+
+.social-list{
+  display:flex;
+  list-style:none;
+  justify-content:center;
+  padding:0;
+}
+
+.social-list li{
+  padding:10px;
+  color:#8E24AA;
+  font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+     border:1px solid #8E24AA !important;
+     color:#8E24AA;
+     height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+     border:1px solid #8E24AA !important;
+     color:#fff;
+     height:40px;
+     background-color:#8E24AA;
+}
+
+.buttons button:nth-child(2){
+     border:1px solid #8E24AA !important;
+     background-color:#8E24AA;
+     color:#fff;
+      height:40px;
+}
+
+    </style>
+</head>
+<body class="grey lighten-4">
+    {% block content %}
+    {% endblock content %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    })
+    </script>
+</body>
+</html>

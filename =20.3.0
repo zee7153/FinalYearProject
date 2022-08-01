@@ -1,0 +1,18 @@
+Requirement already satisfied: Twisted in ./myenv/lib/python3.8/site-packages (22.4.0)
+Requirement already satisfied: hyperlink>=17.1.1 in ./myenv/lib/python3.8/site-packages (from Twisted) (19.0.0)
+Requirement already satisfied: attrs>=19.2.0 in ./myenv/lib/python3.8/site-packages (from Twisted) (21.4.0)
+Requirement already satisfied: constantly>=15.1 in ./myenv/lib/python3.8/site-packages (from Twisted) (15.1.0)
+Requirement already satisfied: typing-extensions>=3.6.5 in ./myenv/lib/python3.8/site-packages (from Twisted) (4.2.0)
+Requirement already satisfied: Automat>=0.8.0 in ./myenv/lib/python3.8/site-packages (from Twisted) (20.2.0)
+Requirement already satisfied: zope.interface>=4.4.2 in ./myenv/lib/python3.8/site-packages (from Twisted) (5.4.0)
+Collecting incremental>=21.3.0
+  Using cached incremental-21.3.0-py2.py3-none-any.whl (15 kB)
+Requirement already satisfied: six in ./myenv/lib/python3.8/site-packages (from Automat>=0.8.0->Twisted) (1.14.0)
+Requirement already satisfied: idna>=2.5 in ./myenv/lib/python3.8/site-packages (from hyperlink>=17.1.1->Twisted) (2.9)
+Requirement already satisfied: setuptools in ./myenv/lib/python3.8/site-packages (from zope.interface>=4.4.2->Twisted) (62.1.0)
+Installing collected packages: incremental
+  Attempting uninstall: incremental
+    Found existing installation: incremental 17.5.0
+    Uninstalling incremental-17.5.0:
+      Successfully uninstalled incremental-17.5.0
+Successfully installed incremental-21.3.0

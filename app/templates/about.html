@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% block content %} {% include 'nav.html' %}
+
+<section class="section">
+    <section class="container">
+
+        <article class="card">
+            <div class="card-content">
+                <h3><center>About</center></h3>
+                <p class="custom-font-1">A bidding system in contract bridge is the set of agreements and understandings assigned to calls and sequences of calls used by a partnership, and includes a full description of the meaning of each treatment and convention</p>
+</div>
+        </article>
+        <article class="card">
+            <div class="card-content">
+                <h3><center>Available Routes</center></h3>
+                <ul class="collection custom-font-1">
+                    <li class="collection-item"><span class="chip">/</span> The home page. Contains new Products.</li>
+                    <li class="collection-item"><span class="chip">about/</span> Holds details about the application.</li>
+                    <li class="collection-item"><span class="chip">register/</span> Allows users to register an account</li>
+                    <li class="collection-item"><span class="chip">login/</span> Allows users to login to an account</li>
+                    <li class="collection-item"><span class="chip">logout/</span> Allows users to logout and clear their session</li>
+                    <li class="collection-item"><span class="chip">dashboard/</span> Data analytics and animated charts for the database.</li>
+                    <li class="collection-item"><span class="chip">chatbot/</span> Integarated chatbot Chatbot.</li>
+
+
+                </ul>
+            </div>
+        </article>
+
+
+        <article class="card">
+            <div class="card-content">
+                <h3><center>Features and specs</center></h3>
+                <ul class="collection custom-font-1">
+                    <li class="collection-item">Authentication system - users can login, register and logout, passwords.</li>
+                    <li class="collection-item ">Certain routes are protected with a login required.</li>
+                    <li class="collection-item">App uses materialize css framework borrowing from Google's material design principles</li>
+                    <li class="collection-item">App developed mainly in Django framework and Javascript.</li>
+                </ul>
+            </div>
+        </article>
+
+    </section>
+</section>
+
+{% include 'footer.html' %} {% endblock content %}
