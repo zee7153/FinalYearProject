@@ -13,10 +13,10 @@ check the version of python by the command:
 
 #python>3.8 
 
-Install Libraries of python project:
+## Install Libraries of python project:
 
 Libraries are install using command line it will install all libraries:
 pip install -r requirements.txt
 
-Make sure your current directory points to root path of project folder.
+## Make sure your current directory points to root path of project folder.
 
